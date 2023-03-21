@@ -1,14 +1,4 @@
-/**
-* Template Name: UpConstruction - v1.3.0
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -263,20 +253,12 @@ section {
 .header {
   z-index: 997;
   position: absolute;
-  padding: 5px 0;
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-default);
 }
 
-#topnavbar {
-  display: flex;
-  justify-content: space-between;
-  max-width: 798px;
-  width: 100%;
-  padding: 10px 0 10px 28px;
-}
+
 
 .header .logo img {
   max-height: 40px;
@@ -298,6 +280,20 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
+
+#topnavbar {
+  background-color: white;
+}
+
+#topnavbar nav div a{
+  color: var(--color-default);
+}
+
+
+#bottomnavbar{
+  background-color: var(--color-default);
+}
+
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
@@ -327,7 +323,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-primary);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     color: white;
@@ -1892,6 +1888,27 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.hero-container, .blinder{
+  min-height: 500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: content-box;
+}
+
+.hero-container {
+background-image: url(../new-img/main-building.jpg);
+}
+
+.blinder {
+  background-image: linear-gradient(to bottom, rgba(6,46,78,0.6), rgba(6,46,78,0.6));
+}
+
+@media (max-width: 768px) {
+  .hero-container, .blinder {
+    min-height: 350px;
+  }
+ }
 .hero {
   overflow-x: hidden;
   padding: 0;

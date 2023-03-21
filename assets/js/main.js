@@ -37,18 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavHide.classList.toggle('d-none')
   }
 
-  function showModal() {
-    const links = document.querySelectorAll('.nav-link')
-    links.forEach((link) => {
-      link.addEventListener('click', () => {
-        const modal = document.createElement('div')
-        modal.classList.add('modal')
-        modal.innerText = 'Здарова пєдік'
-        document.body.appendChild(modal)
-      })
-    })
-  }
-
   /**
    * Hide mobile nav on same-page/hash links
    */
